@@ -12,17 +12,38 @@ header, main, footer {
   padding: 2% 5%;
 }
 
+.row {
+  align-items: center;
+}
+
 /*buttons*/
+.color-btn, .white-btn {
+  width: 100%;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
 .color-btn {
   background: linear-gradient(to right, hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
   color: white !important;
-  width: 100%;
+  border: 1px solid hsl(237, 63%, 64%);
 }
+
+.color-btn:hover {
+  background: white !important;
+  color: hsl(237, 63%, 64%) !important;
+}
+
 
 .white-btn {
   background: white !important;
   color: hsl(237, 63%, 64%) !important;
-  width: 100%;
+  border: 1px solid white;
+}
+
+.white-btn:hover {
+  background: linear-gradient(to right, hsl(236, 72%, 79%) , hsl(237, 63%, 64%)) !important;;
+  color: white !important;
 }
 
 /*toggle button*/
@@ -93,14 +114,36 @@ input:checked + .slider:before {
 
 /*main*/
 .card-layout {
-  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.card {
+  border: none;
+  box-shadow: 10px 10px 100px hsl(234, 14%, 74%);
 }
 
 #colorCard {
   background: linear-gradient(to right, hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
   color: white;
+  padding: 5% 0;
 }
 
 /*footer*/
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width:991px) {
+
+  .row {
+    justify-content: center;
+  }
+  
+  .card-layout {
+    padding: 15px 15px;
+  }
+
+  #colorCard {
+    padding: 0;
+  }
+
+}
