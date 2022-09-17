@@ -1,0 +1,22 @@
+{
+  "name": "pricing-component-with-toggle-master",
+  "version": "1.0.0",
+  "description": "small app with toggle",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skozmi/pricing-component-with-toggle.git"
+  },
+  "author": "Miloš Mirković",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skozmi/pricing-component-with-toggle/issues"
+  },
+  "homepage": "https://github.com/skozmi/pricing-component-with-toggle#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
