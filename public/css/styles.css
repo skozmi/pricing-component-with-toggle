@@ -1,15 +1,29 @@
 body {
   text-align: center !important;
-  font-size: 15px !important;
+  font-size: 15px;
   background-image: url("../images/bg-top.svg"), url("../images/bg-bottom.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: top right, bottom left;
   font-family: 'Montserrat', sans-serif !important;
 }
 
+
 /*containers*/
 header, main, footer {
   padding: 2% 5%;
+}
+
+/*headings and paragraphs*/
+h1 {
+  font-size: 1em;
+}
+h1, label {
+  color: hsl(234, 14%, 74%);
+}
+
+h2 {
+  font-size: 3em;
+  font-weight: 700;
 }
 
 .row {
@@ -120,12 +134,13 @@ input:checked + .slider:before {
 .card {
   border: none;
   box-shadow: 10px 10px 100px hsl(234, 14%, 74%);
+  padding: 15px;
 }
 
 #colorCard {
   background: linear-gradient(to right, hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
   color: white;
-  padding: 5% 0;
+  padding: 30px 15px;
 }
 
 /*footer*/
@@ -139,11 +154,47 @@ input:checked + .slider:before {
   }
   
   .card-layout {
-    padding: 15px 15px;
+    padding: 15px;
   }
 
   #colorCard {
-    padding: 0;
+    padding: 15px;
+  }
+
+}
+
+@media (max-width:991px) {
+
+  .row {
+    justify-content: center;
+  }
+  
+  .card-layout {
+    padding: 15px;
+  }
+
+  #colorCard {
+    padding: 15px;
+  }
+
+}
+
+@media (max-width:600px) {
+
+  body {
+    font-size: 12px;
+  }
+
+}
+
+@media (max-width:350px) {
+
+  body {
+    font-size: 10px;
+  }
+
+  header, main, footer {
+    padding: 2% 2%;
   }
 
 }
